@@ -1,0 +1,18 @@
+.content ul {
+  list-style: none;
+  background-color: rgb(215, 219, 224);
+  width: 26%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.dark .content ul{
+  background-color: rgb(75, 89, 109);
+}
+
+@media only screen and (max-width: 768px) {
+  .content ul {
+    width: 80%;
+    padding: 20px;
+  }
+}

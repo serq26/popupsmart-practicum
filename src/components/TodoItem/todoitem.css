@@ -1,0 +1,101 @@
+.content ul li {
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 10px;
+  background-color: #a6a7a9;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content ul li.editing{
+  background-color: #db8d33!important;
+}
+
+.content ul li input {
+  background: transparent;
+  border: 1px solid #ddd;
+  outline: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content ul li input::placeholder {
+  color: #fff;
+}
+
+.dark .content ul li {
+  background-color: rgb(96, 110, 131);
+}
+
+.dark .content ul li.done {
+  background-color: rgb(62, 74, 92);
+}
+
+.content ul li.done {
+  background: rgb(185, 185, 185);
+  opacity: 0.5;
+}
+
+.content ul li button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.content ul li button.done {
+  color: rgb(54, 167, 54);
+}
+
+.content ul li button.edit {
+  color: orange;
+}
+
+.content ul li button.editing {
+  -webkit-animation: scale-up-center 1.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+    infinite alternate both;
+  animation: scale-up-center 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite
+    alternate both;
+    color: cornflowerblue;
+}
+
+.content ul li button.remove {
+  color: rgb(233, 22, 22);
+}
+
+.content ul li button svg {
+  height: 24px;
+  width: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content ul li button svg:hover {
+  transform: scale(1.15);
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
